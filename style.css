@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+
+/* Logo Styles */
+.logo {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #4285f4;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Converter Styles */
+.converter {
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Input Block Styles */
+.input-block {
+    margin-bottom: 20px;
+}
+
+.input-block label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #4285f4;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+/* Buttons Styles */
+.buttons {
+    text-align: center;
+	display: flex;
+    margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.green-button {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(76, 175, 80);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.green-button:hover {
+    background-color: #3367d6;
+}
+
+/* Output Block Styles */
+.output-block {
+    margin-top: 20px;
+}
+
+.output-block label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #4285f4;
+}
+
+#output {
+    display: block;
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .logo {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .input-block label {
+        font-size: 18px;
+    }
+    
+    textarea {
+        font-size: 14px;
+    }
+    
+    .green-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    
+    .output-block label {
+        font-size: 18px;
+    }
+    
+    #output {
+        height: 150px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    textarea {
+        font-size: 12px;
+        padding: 8px;
+    }
+    
+    .green-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    
+    .output-block label {
+        font-size: 16px;
+    }
+    
+    #output {
+        height: 100px;
+        font-size: 12px;
+    }
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+  margin-top: 50px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer span {
+  font-size: 18px;
+  margin: 0 5px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.converter.dark-mode {
+    border-color: #444;
+    background-color: #333;
+}
+
+.green-button.dark-mode {
+    background-color: #666;
+}
+
+.container {
+  background-color: #fff; /* default background color */
+}
+
+.dark-mode .container {
+  background-color: #222;
+}
+.dark-mode #paragraph {
+  background-color: #222;
+}
+
+#output.dark-mode {
+    background-color: #444;
+    color: #fff;
+}

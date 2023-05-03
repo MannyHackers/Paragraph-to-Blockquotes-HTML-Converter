@@ -153,3 +153,25 @@ copyBtn.addEventListener('click', copyHtml);
 clearBtn.addEventListener('click', clearOutput);
 darkModeBtn.addEventListener('click', toggleDarkMode);
 
+function countWordsAndChars() {
+  const inputParagraph = paragraph.value;
+  const wordCount = inputParagraph.trim().split(/\s+/).filter(Boolean).length;
+  const charCount = inputParagraph.length;
+  const wordCountSpan = document.getElementById('word-count');
+  const charCountSpan = document.getElementById('char-count');
+  wordCountSpan.textContent = `${wordCount} ${wordCount === 1 ? 'word' : 'words'}`;
+  charCountSpan.textContent = `| ${charCount} ${charCount === 1 ? 'character' : 'characters'}`;
+  // Add CSS styles to the word and character count
+  wordCountSpan.style.fontWeight = 'bold';
+  wordCountSpan.style.color = '#4285f4';
+  wordCountSpan.style.marginTop = '10px';
+  wordCountSpan.style.marginLeft = '5px';
+  charCountSpan.style.fontWeight = 'bold';
+  charCountSpan.style.color = '#4caf50';
+  charCountSpan.style.marginTop = '10px';
+  charCountSpan.style.marginLeft = '5px';
+}
+
+paragraph.addEventListener('input', () => {
+    countWordsAndChars();
+});

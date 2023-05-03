@@ -206,6 +206,7 @@ body.dark-mode {
 }
 .dark-mode #paragraph {
   background-color: #222;
+  color: white;
 }
 
 #output.dark-mode {

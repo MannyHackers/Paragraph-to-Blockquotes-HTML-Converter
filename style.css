@@ -166,20 +166,9 @@ textarea {
     }
 }
 
-footer {
+.text-center {
   text-align: center;
-  font-size: 14px;
-  color: #999;
-  margin-top: 50px;
-}
-
-footer p {
-  margin-bottom: 10px;
-}
-
-footer span {
-  font-size: 18px;
-  margin: 0 5px;
+  color: #4285f4;
 }
 
 /* Dark Mode Styles */

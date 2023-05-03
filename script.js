@@ -157,11 +157,14 @@ function countWordsAndChars() {
   const inputParagraph = paragraph.value;
   const wordCount = inputParagraph.trim().split(/\s+/).filter(Boolean).length;
   const charCount = inputParagraph.length;
+  const paragraphCount = inputParagraph.split('\n').filter(Boolean).length;
   const wordCountSpan = document.getElementById('word-count');
   const charCountSpan = document.getElementById('char-count');
-  wordCountSpan.textContent = `${wordCount} ${wordCount === 1 ? 'word' : 'words'}`;
-  charCountSpan.textContent = `| ${charCount} ${charCount === 1 ? 'character' : 'characters'}`;
-  // Add CSS styles to the word and character count
+  const paragraphCountSpan = document.getElementById('paragraph-count');
+  wordCountSpan.textContent = `${wordCount} ${wordCount === 1 ? 'Word' : 'Words'}`;
+  charCountSpan.textContent = `| ${charCount} ${charCount === 1 ? 'Character' : 'Characters'}`;
+  paragraphCountSpan.textContent = `| ${paragraphCount} ${paragraphCount === 1 ? 'Paragraph' : 'Paragraphs'}`;
+  // Add CSS styles to the word, character and paragraph count
   wordCountSpan.style.fontWeight = 'bold';
   wordCountSpan.style.color = '#4285f4';
   wordCountSpan.style.marginTop = '10px';
@@ -170,6 +173,10 @@ function countWordsAndChars() {
   charCountSpan.style.color = '#4caf50';
   charCountSpan.style.marginTop = '10px';
   charCountSpan.style.marginLeft = '5px';
+  paragraphCountSpan.style.fontWeight = 'bold';
+  paragraphCountSpan.style.color = '#f44336';
+  paragraphCountSpan.style.marginTop = '10px';
+  paragraphCountSpan.style.marginLeft = '5px';
 }
 
 paragraph.addEventListener('input', () => {

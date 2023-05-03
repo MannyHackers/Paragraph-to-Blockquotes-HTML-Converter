@@ -10,7 +10,7 @@ This is a simple web-based tool that allows you to convert a paragraph to blockq
 - Copy the HTML output to the clipboard
 - Clear the HTML output from the output div
 - Toggle dark mode for better readability
-
+- Count the number of paragraphs, words, and characters in the input text
 ## Installation
 
 You can install this tool by cloning the repository:
